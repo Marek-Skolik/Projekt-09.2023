@@ -1,0 +1,128 @@
+/*FIRST SECTION */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.firstSection {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.firstElem {
+    max-width: 40%;
+    float: left;
+    margin-left: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -2%;
+}
+
+.secondElem {
+    max-width: 40%;
+    float: right;
+    margin-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: left;
+    max-width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.right {
+    z-index: 2;
+    margin-left: 1%;
+    width: 45%;
+    position: relative;
+}
+
+.left {
+    margin-left: 6%;
+    margin-top: -8%;
+    z-index: 1;
+    width: 44%;
+    position: relative;
+    transform: translateY(-30px);
+}
+
+.contact {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+  
+.contact::before {
+    content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 1px;
+    background-color: #000;
+    margin-left: 10px; 
+    vertical-align: middle;
+}
+  
+a .contact{
+    vertical-align: middle;
+}
+
+/* SECOND SECTION */
+
+h1 {
+    font-size: 150px;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.1;
+}
+
+#myCarousel {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.carousel-item {
+    flex: 0 0 auto; 
+    width: 25%; 
+    text-align: center; 
+    margin-top: -11%;
+    margin-bottom: 0;
+}
+
+.carousel-item img {
+    max-width: 100%; 
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.control-prev {
+    margin-left: 10%;
+}
+
+.control-next {
+    margin-right: 10%;
+}
+
+.download {
+    margin: 0 auto;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
