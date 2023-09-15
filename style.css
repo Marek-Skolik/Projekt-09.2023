@@ -1,7 +1,7 @@
 /*FIRST SECTION */
 
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-top: 10%;
 }
@@ -135,8 +135,8 @@ h1 {
 
 .taskList {
     opacity: 0.6;
-    width: 80%; /* Dostosuj szerokość do swoich potrzeb */
-    margin: 0 auto; /* Wyśrodkuj na stronie */
+    width: 80%; 
+    margin: 0 auto; 
 }
 
 .taskList p{
@@ -166,22 +166,23 @@ h1 {
 
 .title-bg {
     background: linear-gradient(to right, #4EB7E8, #70A4D3, #8C8FBC, #7F00FF);
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     color: #fff;
-    width: 45%;
-    margin-left: 25%;
+    width: 30%; 
+    margin-left: 35%;
 }
 
 .title-text {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
 }
 
 .todo-form {
     border: 1px solid black;
     background-color: #fff;
-    width: 45%;
-    margin-left: 25%;
+    width: 30%; 
+    margin-left: 35%;
+    padding: 20px 0; 
 }
 
 .form-group {
@@ -198,8 +199,14 @@ h1 {
     width: 60%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+#taskInput {
+    border: none; 
+    width: 60%; 
+    padding: 10px; 
+    margin-right: 20%;
+    font-size: 25px; 
 }
 
 .todo-form button {
@@ -226,14 +233,184 @@ h1 {
 .task-item {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+    font-weight: 800;
+    font-size: 22px;
     justify-content: space-between;
     align-items: center;
 }
 
+.delete-task {
+    cursor: pointer;
+  }
+
 .task-item:last-child {
     margin-bottom: 20px;
+}
+
+#addTaskIcon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer; 
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    
+    @media (max-width: 768px) {
+        /* FIRST SECTION */
+        .container {
+            margin-top: 5%;
+        }
+    
+        .firstElem, .secondElem {
+            max-width: 100%;
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+    
+        .firstElem h2, .secondElem h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+    
+        .firstElem p, .secondElem p {
+            font-size: 14px;
+        }
+    
+        .left, .right {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: none;
+            margin-top: 10px;
+        }
+    
+        .contact {
+            margin-top: 20px;
+        }
+    
+        /* SECOND SECTION */
+        .secondSection h1 {
+            font-size: 50px;
+        }
+    
+        .carousel-item {
+            width: 100%;
+            margin-top: 0;
+        }
+    
+        .carousel-controls {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+    
+        .control-prev, .control-next {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    
+        .download {
+            font-size: 18px;
+        }
+    
+        /* THIRD SECTION */
+        .titleThirdSection {
+            font-size: 20px; 
+            margin-left: 10px; 
+        }
+
+        .taskList p {
+            font-size: 14px; 
+            margin-bottom: 10px; 
+            padding-left: 20px; 
+        }
+
+        .taskList p::before {
+            font-size: 16px;
+        }
+    
+        /* FOURTH SECTION */
+        .fourthSection {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .title-bg {
+            width: 100%;
+            margin-left: 0;
+            padding: 10px 0;
+        }
+
+        .title-text {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .todo-form {
+            border: 1px solid black;
+            background-color: #fff;
+            width: 90%; 
+            margin: 0 auto; 
+            padding: 15px 10px; 
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        .todo-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .todo-form input {
+            width: 100%; 
+            padding: 10px;
+            margin-bottom: 10px; 
+        }
+
+        #taskInput {
+            font-size: 16px;
+        }
+
+        .todo-form button {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .task-item {
+            font-size: 16px; 
+            margin-top: 10px; 
+        }
+
+        .task-item:last-child {
+            margin-bottom: 10px; 
+        }
+
+        #addTaskIcon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+
 }
